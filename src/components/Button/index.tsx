@@ -5,6 +5,7 @@ import { Container } from './styles';
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button: React.FC<ButtonProps> = ({ children, ...rest }) => (
+  // eslint-disable-next-line react/jsx-props-no-spreading
   <Container type="button" {...rest}>
     {children}
   </Container>

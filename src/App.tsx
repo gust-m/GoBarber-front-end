@@ -9,15 +9,13 @@ import Routes from './routes/index';
 
 const App: React.FC = () => {
   return (
-    <>
+    <BrowserRouter>
       <AppProvider>
-        <BrowserRouter>
-          <Routes />
-        </BrowserRouter>
+        <Routes />
       </AppProvider>
 
       <GlobalStyles />
-    </>
+    </BrowserRouter>
   );
 };
 

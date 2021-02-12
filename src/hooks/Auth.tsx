@@ -9,11 +9,11 @@ interface SignInCredentials {
 
 interface AuthState {
   token: string;
-  user: object;
+  user: Record<string, unknown>;
 }
 
 interface AuthContextData {
-  user: object;
+  user: Record<string, unknown>;
   signIn(credentials: SignInCredentials): Promise<void>;
   signOut(): void;
 }

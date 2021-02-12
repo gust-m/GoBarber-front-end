@@ -12,7 +12,7 @@ import { ToastMessage, useToast } from '../../../hooks/Toast';
 
 interface ToastProps {
   message: ToastMessage;
-  style: object;
+  style: Record<string, unknown>;
 }
 
 const Toast: React.FC<ToastProps> = ({ message, style }) => {
