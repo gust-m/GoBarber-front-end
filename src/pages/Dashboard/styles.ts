@@ -34,24 +34,30 @@ export const Profile = styled.div`
   align-items: center;
   margin-left: 80px;
 
-  > img {
-    width: 56px;
-    height: 56px;
-    border-radius: 50%;
-  }
-
-  > div {
+  > a {
+    text-decoration: none;
     display: flex;
-    flex-direction: column;
-    margin-left: 16px;
-    line-height: 24px;
+    align-items: center;
 
-    span {
-      color: #f4ede8;
+    > img {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
     }
 
-    strong {
-      color: #ff9000;
+    > div {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16px;
+      line-height: 24px;
+
+      span {
+        color: #f4ede8;
+      }
+
+      strong {
+        color: #ff9000;
+      }
     }
   }
 `;
@@ -157,6 +163,10 @@ export const Section = styled.section`
     padding-bottom: 16px;
     margin-bottom: 16px;
   }
+
+  > p {
+    color: #999591;
+  }
 `;
 
 export const Appointment = styled.div`
@@ -168,6 +178,7 @@ export const Appointment = styled.div`
     display: flex;
     align-items: center;
     color: #f4ede8;
+    width: 70px;
 
     svg {
       color: #ff9000;
