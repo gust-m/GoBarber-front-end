@@ -42,6 +42,14 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/pages/**/*.tsx",
+      "src/components/**/*.tsx",
+      "src/hooks/*.tsx",
+      "!src/hooks/index.tsx"
+    ]
+  },
   "devDependencies": {
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.0",
